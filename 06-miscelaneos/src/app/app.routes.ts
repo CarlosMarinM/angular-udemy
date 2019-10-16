@@ -1,9 +1,24 @@
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomeComponent } from './components/home/home.component';
+<<<<<<< HEAD
 
 const APP_ROUTES: Routes = [
     { path: 'home', component: HomeComponent },
+=======
+import { UsuarioComponent } from './components/usuario/usuario.component';
+
+import { USUARIO_ROUTES } from './components/usuario/usuario.routes';
+
+
+const APP_ROUTES: Routes = [
+    { path: 'home', component: HomeComponent },
+    {
+        path: 'usuario/:id',
+        component: UsuarioComponent,
+        children: USUARIO_ROUTES
+    },
+>>>>>>> dev-carlos-office
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
