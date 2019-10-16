@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ProtegidaComponent } from './components/protegida/protegida.component';
 import { PeciosComponent } from './components/pecios/pecios.component';
+import { CallbackComponent } from './components/callback/callback.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PeciosComponent } from './components/pecios/pecios.component';
     NavbarComponent,
     HomeComponent,
     ProtegidaComponent,
-    PeciosComponent
+    PeciosComponent,
+    CallbackComponent
   ],
   imports: [
     BrowserModule,
