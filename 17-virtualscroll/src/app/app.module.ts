@@ -4,18 +4,28 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VirtualComponent } from './virtual/virtual.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { DragComponent } from './drag/drag.component';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { PaisesComponent } from './paises/paises.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    VirtualComponent
+    VirtualComponent,
+    DragComponent,
+    PaisesComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ScrollingModule
+    ScrollingModule,
+    DragDropModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
